@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101110">
+  <meta name="description" content="An interactive developer portfolio focused on Android, the web, and AI-assisted applications.">
+  <title>Developer Portfolio — Interactive CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/portfolio-data.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/assistant.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-noise" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#home" aria-label="Portfolio home">MY<span>_</span> DIGITAL PORTFOLIO</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+      <a href="#home" class="nav-link is-active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <button class="motion-toggle" type="button" aria-pressed="false" aria-label="Enable animations" title="Enable or disable animations"><span class="motion-toggle-indicator" aria-hidden="true"></span><span class="motion-toggle-label">Motion: Off</span></button>
+      <button class="nav-assistant ai-glitch-button" type="button" data-open-assistant><span class="status-dot"></span> Ask My AI<span class="ai-button-blink" aria-hidden="true"></span></button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy" data-parallax="0.08">
+        <div class="profile-badge" data-profile-tilt><img class="profile-photo" src="Profile.jpg" alt="Portrait of the developer" fetchpriority="high"></div>
+        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR WHAT'S NEXT</p>
+        <p class="hero-intro">Hello, I'm</p>
+        <h1 id="hero-title"><span>Angel Mark<span class="accent-dot">.</span></span><span class="hero-title-slice" aria-hidden="true">Angel Mark.</span><span class="hero-title-binary" aria-hidden="true"><span>01001101</span><span>01000001</span><span>01010010</span><span>01001011</span><span>01000001</span><span>01001110</span><span>01000111</span><span>01000101</span></span></h1>
+        <div class="hero-role"><span class="hero-line"></span><span>AI-Assisted UI/UX &amp; Interactive Web Designer</span></div>
+        <p class="hero-education">Bachelor of Science in Information Technology <span>major in Technopreneurship</span></p>
+        <p class="hero-description">I build interactive digital experiences, learning applications, and AI-powered tools with a focus on usability, creativity, and modern technology.</p>
+        <div class="hero-actions">
+          <a class="button button-primary magnetic" href="#projects">View projects <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary magnetic" href="#about">Explore CV <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary magnetic" href="assets/Angel-Mark-CV.pdf" download="Angel-Mark-CV.pdf">Download CV <span class="download-icon" aria-hidden="true">↓<i></i></span></a>
+        </div>
+        <div class="hero-meta"><span>ANDROID</span><span>WEB</span><span>AI</span><span>INTERACTION</span></div>
+      </div>
+      <div class="hero-art" data-scroll-parallax="16" aria-label="Abstract interactive illustration of connected technology">
+        <div class="art-orbit orbit-outer"></div><div class="art-orbit orbit-inner"></div>
+        <div class="art-core" data-scroll-parallax="7"><div class="core-cross">+</div><span>BUILD<br>WITH<br>INTENT</span><b>01—04</b></div>
+        <div class="art-chip chip-code" data-parallax="0.18"><span class="chip-icon">{ }</span><span>CODE<br><b>IN MOTION</b></span></div>
+        <div class="art-chip chip-ai" data-parallax="-0.2"><span class="ai-spark"></span><span>HUMAN<br><b>+ AI</b></span></div>
+        <div class="art-coordinate">14°35' N<br>120°58' E</div>
+        <span class="art-node node-one"></span><span class="art-node node-two"></span>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-cue-line"></span><span>SCROLL TO EXPLORE</span></a>
+      <div class="hero-index">PORTFOLIO / 2026</div>
+    </section>
+
+    <section class="intro-band" aria-label="Portfolio summary">
+      <div class="intro-band-track">
+        <div class="marquee-group">
+          <span>THOUGHTFUL BY DESIGN</span><b>✳</b>
+          <span>BUILT TO BE USEFUL</span><b>✳</b>
+          <span>CURIOUS ABOUT WHAT'S NEXT</span><b>✳</b>
+          <span>OFFLINE-BASED APPLICATION</span><b>✳</b>
+          <span>INTERACTIVE EDUCATION</span><b>✳</b>
+          <span>ANDROID · WEB · AI</span><b>✳</b>
+          <span>CONVERSATIONAL CARE</span><b>✳</b>
+          <span>AI-ASSISTED TOOLS</span><b>✳</b>
+          <span>DESIGNED FOR USABILITY</span><b>✳</b>
+          <span>TECHNOLOGY FOR LEARNING</span><b>✳</b>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>THOUGHTFUL BY DESIGN</span><b>✳</b>
+          <span>BUILT TO BE USEFUL</span><b>✳</b>
+          <span>CURIOUS ABOUT WHAT'S NEXT</span><b>✳</b>
+          <span>OFFLINE-FIRST LEARNING</span><b>✳</b>
+          <span>INTERACTIVE EDUCATION</span><b>✳</b>
+          <span>ANDROID · WEB · AI</span><b>✳</b>
+          <span>CONVERSATIONAL CARE</span><b>✳</b>
+          <span>AI-ASSISTED TOOLS</span><b>✳</b>
+          <span>DESIGNED FOR USABILITY</span><b>✳</b>
+          <span>TECHNOLOGY FOR LEARNING</span><b>✳</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell about-section" id="about" aria-labelledby="about-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">01 / THE PERSON BEHIND THE BUILD</p><h2 id="about-title" class="binary-title" data-binary-reveal><span class="binary-title-text">Turning technology<br><span class="serif-accent">into experiences.</span></span></h2></div><span class="section-mark">01</span></div>
+      <div class="about-layout">
+        <div class="about-lead reveal"><p class="large-copy">Developer</p><p class="body-copy">Working across Android, web, and AI-assisted applications, with a focus on accessible, and engaging experience.</p><a class="text-link" href="#experience">Explore contributions <span>↗</span></a></div>
+        <div class="focus-panel reveal" data-scroll-parallax="8"><div class="focus-top"><span>AREAS OF FOCUS</span><span>06</span></div><div class="focus-list"><span>Android development</span><span>Web development</span><span>AI-assisted applications</span><span>Interactive UI</span><span>Educational technology</span><span>User experience</span></div><div class="focus-foot"><span class="mini-pulse"></span> LEARNING THROUGH BUILDING</div></div>
+      </div>
+    </section>
+
+    <section class="section-shell projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">02 / SELECTED WORK</p><h2 id="projects-title" class="binary-title" data-binary-reveal><span class="binary-title-text">Built for <span class="serif-accent">real life.</span></span></h2></div><div class="section-counter"><span class="counter-value" data-counter="2" data-suffix="">0</span><span>PROJECTS<br>FEATURED</span></div></div>
+      <div class="project-list" id="project-list"></div>
+    </section>
+
+    <section class="stats-strip" aria-label="Portfolio statistics"><div class="stats-inner"><div class="stat-item"><span class="stat-label">PROJECTS</span><strong class="stat-number" data-counter="2">0</strong><span class="stat-detail">selected builds</span></div><div class="stat-rule"></div><div class="stat-item"><span class="stat-label">E-CERTS</span><strong class="stat-number" data-counter="5" data-suffix="+">0</strong><span class="stat-detail">certificate records</span></div><div class="stat-note">A small collection<br>with room to grow<span>↗</span></div></div></section>
+
+    <section class="section-shell skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">03 / TOOLS OF THE TRADE</p><h2 id="skills-title" class="binary-title" data-binary-reveal><span class="binary-title-text">Curiosity, <span class="serif-accent">in practice.</span></span></h2></div><span class="section-mark">03</span></div>
+      <div class="skills-grid">
+        <article class="skill-group reveal"><div class="skill-group-head"><span>01</span><h3>Development</h3><span class="skill-symbol">⌘</span></div><div class="skill-tags"><span>Kotlin</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Jetpack Compose</span></div></article>
+        <article class="skill-group reveal"><div class="skill-group-head"><span>02</span><h3>Tools</h3><span class="skill-symbol">⌁</span></div><div class="skill-tags"><span>Android Studio</span><span>VS Code</span><span>Git</span><span>GitHub</span><span>Canva</span><span>CapCut</span><span>LottieFiles</span></div></article>
+        <article class="skill-group reveal"><div class="skill-group-head"><span>03</span><h3>AI / Technology</h3><span class="skill-symbol">✳</span></div><div class="skill-tags"><span>AI API integration</span><span>AI-assisted development</span><span>Conversational interfaces</span><span>Prompt engineering</span></div></article>
+      </div>
+      <p class="skills-footnote"><span class="status-dot"></span> Skills shown reflect the projects and details in this portfolio.</p>
+    </section>
+
+    <section class="section-shell experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="experience-aside reveal"><p class="eyebrow">04 / HOW I CONTRIBUTE</p><h2 id="experience-title" class="binary-title" data-binary-reveal><span class="binary-title-text">The work<br>behind the <span class="serif-accent">work.</span></span></h2><p class="body-copy">Hands-on contributions across the build, from first interface to final debug pass.</p></div>
+      <div class="experience-content reveal"><div class="role-label"><span class="role-indicator"></span><span>CONTRIBUTION FOCUS</span><strong>Project contributions</strong></div><div class="contribution-list"><span>Application development</span><span>UI implementation</span><span>Feature development</span><span>Testing &amp; debugging</span><span>Animation implementation</span><span>AI integration</span></div></div>
+    </section>
+
+    <section class="section-shell education-section" id="education" aria-labelledby="education-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">05 / LEARNING JOURNEY</p><h2 id="education-title" class="binary-title" data-binary-reveal><span class="binary-title-text">Educational <span class="serif-accent">background.</span></span></h2></div><span class="section-mark">05</span></div>
+      <div class="education-timeline" data-scroll-parallax="10">
+        <article class="education-item reveal"><span class="edu-index">01</span><span class="edu-dot"></span><div class="edu-content"><span class="edu-level">ELEMENTARY</span><h3>Camp 1 Elementary School</h3></div><span class="edu-arrow">↗</span></article>
+        <article class="education-item reveal"><span class="edu-index">02</span><span class="edu-dot"></span><div class="edu-content"><span class="edu-level">HIGH SCHOOL</span><h3>San Andres Academy of Maramag, Inc.</h3></div><span class="edu-arrow">↗</span></article>
+        <article class="education-item reveal"><span class="edu-index">03</span><span class="edu-dot"></span><div class="edu-content"><span class="edu-level">COLLEGE</span><h3>Torres Capitol College, Inc.</h3></div><span class="edu-arrow">↗</span></article>
+      </div>
+    </section>
+
+    <section class="section-shell certifications-section" id="certifications" aria-labelledby="certifications-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">06 / CONTINUOUS LEARNING</p><h2 id="certifications-title" class="binary-title" data-binary-reveal><span class="binary-title-text">Attended <span class="serif-accent">Webinars and Trainings.</span></span></h2></div><div class="section-counter"><span class="counter-value" data-counter="5" data-suffix="+">0</span><span>E-CERTS<br>RECORDED</span></div></div>
+      <p class="cert-intro reveal">Five or more certificates have been noted. Individual certificate details have not been provided.</p>
+      <div class="cert-grid" id="cert-grid"></div>
+    </section>
+
+    <section class="closing-cta" id="contact" aria-labelledby="cta-title"><div class="closing-grid" aria-hidden="true"></div><div class="closing-inner reveal"><p class="eyebrow"><span class="status-dot"></span> 07 / GET IN TOUCH</p><h2 id="cta-title" class="contact-title-motion" data-scroll-parallax="9">Get in touch.<br><span class="serif-accent">Ask the portfolio.</span></h2><p>Questions about the projects, tools, or learning journey? Ask the assistant or explore the work.</p><div class="closing-actions"><button class="button button-primary magnetic ai-glitch-button" type="button" data-open-assistant>Ask My AI <span aria-hidden="true">↗</span><span class="ai-button-blink" aria-hidden="true"></span></button><a class="button button-secondary magnetic" href="#projects">View projects <span aria-hidden="true">↓</span></a></div></div><span class="closing-orbit orbit-a" aria-hidden="true"></span><span class="closing-orbit orbit-b" aria-hidden="true"></span></section>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark" href="#home">MY<span>_</span>DIGITAL PORTFOLIO</a><span>Angel Mark@2026 <b>✳</b></span><a href="#top" class="back-top">BACK TO TOP ↑</a></footer>
+
+  <div class="custom-cursor" aria-hidden="true"><span></span></div>
+  <div class="modal-backdrop" id="project-modal" hidden><section class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" type="button" aria-label="Close project details">×</button><div class="modal-content" id="modal-content"></div></section></div>
+
+  <button class="assistant-launcher ai-glitch-button" type="button" data-open-assistant aria-label="Open AI CV assistant"><span class="launcher-icon"></span><span>Ask My AI</span><span class="ai-button-blink" aria-hidden="true"></span></button>
+  <section class="chat-panel" id="assistant-panel" aria-label="AI CV assistant" hidden>
+    <header class="chat-header"><div class="chat-avatar">✳</div><div class="chat-title"><strong>Portfolio Assistant</strong><span><i class="status-dot"></i> Answers from this CV only</span></div><button class="chat-clear" type="button" aria-label="Clear conversation" title="Clear conversation"><span aria-hidden="true">↺</span> Clear</button><button class="chat-minimize" type="button" aria-label="Close assistant">×</button></header>
+    <div class="chat-messages" id="chat-messages" aria-live="polite" aria-relevant="additions text"><div class="chat-message assistant-message"><span class="message-avatar">✳</span><p>Hi. Ask me about the projects, skills, or education listed here. I'll tell you when something isn't available.</p></div></div>
+    <div class="suggested-questions"><button type="button">What is EduTech Mobile?</button><button type="button">Where did they study?</button></div>
+    <form class="chat-form" id="chat-form"><label class="visually-hidden" for="chat-input">Ask a question about the portfolio</label><input id="chat-input" name="question" placeholder="Ask about this portfolio…" autocomplete="off" required><button type="submit" aria-label="Send message">↑</button></form>
+    <p class="chat-disclaimer">Local assistant · No API key or external service</p>
+  </section>
+  <script>document.documentElement.classList.add('js');</script>
+</body>
+</html>
