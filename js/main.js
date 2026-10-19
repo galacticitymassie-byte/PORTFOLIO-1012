@@ -59,15 +59,15 @@
 
   function projectVisual(project) {
     if (project.visual === 'edu') {
-      return `<img class="edu-project-image" src="Picture1.jpg" alt="EduTech Learning app start screen"><span class="visual-orb edu-orb"></span><span class="visual-caption">OFFLINE-FIRST LEARNING <b>01</b></span>`;
+      return `<img class="edu-project-image" src="Picture1.jpg" alt="EduTech Learning app start screen">`;
     }
-    return `<div class="visual-screen pet-screen"><div class="pet-top"><span class="pet-brand"><i>✳</i> belupacito</span><span class="pet-menu">☰</span></div><div class="pet-greeting">A little help for<br><b>your best friend.</b></div><div class="pet-orbit"><span class="pet-spark spark-one">✳</span><span class="pet-spark spark-two">+</span><div class="pet-face"><i></i><i></i><b></b></div></div><div class="pet-prompt"><span>Ask about pet care...</span><b>↑</b></div><div class="pet-tags"><span>Nutrition</span><span>Daily care</span><span>Wellbeing</span></div></div><span class="visual-orb pet-orb"></span><span class="visual-caption">CONVERSATION, WITH CARE <b>02</b></span>`;
+    return `<img class="pet-project-image" src="belupacito.png" alt="Belupacito AI pet care assistant sign-in screen">`;
   }
 
   function renderProjects() {
     projectList.innerHTML = data.projects.map((project) => `
       <article class="project-card reveal" data-project="${escapeHTML(project.slug)}">
-        <div class="project-visual visual-${escapeHTML(project.visual)}" data-scroll-parallax="12" aria-hidden="true"><span class="project-visual-label">${escapeHTML(project.visualLabel)}</span>${projectVisual(project)}<span class="visual-grain"></span></div>
+        <div class="project-visual visual-${escapeHTML(project.visual)}" data-scroll-parallax="12" aria-hidden="true">${projectVisual(project)}<span class="visual-grain"></span></div>
         <div class="project-info"><div class="project-meta"><span>${escapeHTML(project.number)} / ${escapeHTML(project.category)}</span><span>${escapeHTML(project.role)}</span></div><h3>${escapeHTML(project.title)}</h3><p>${escapeHTML(project.description)}</p><div class="project-tags">${project.technologies.slice(0, 5).map((tag) => `<span>${escapeHTML(tag)}</span>`).join('')}<span class="tag-more">+${project.technologies.length - 5}</span></div><button class="project-open" type="button" aria-label="Explore ${escapeHTML(project.title)}">EXPLORE PROJECT <span>↗</span></button></div>
       </article>`).join('');
     projectList.querySelectorAll('.project-card').forEach((card) => {
@@ -96,7 +96,7 @@
 
   function openModal(project) {
     lastFocusedElement = document.activeElement;
-    modalContent.innerHTML = `<p class="eyebrow">${escapeHTML(project.number)} / ${escapeHTML(project.category)}</p><h2 id="modal-title">${escapeHTML(project.title)}</h2><p class="modal-lead">${escapeHTML(project.overview)}</p><div class="modal-role"><span>ROLE</span><strong>${escapeHTML(project.role)}</strong></div><div class="modal-detail-grid"><section><h3>Project overview</h3><p>${escapeHTML(project.description)}</p></section><section><h3>Main features</h3><ul>${project.features.map((feature) => `<li>${escapeHTML(feature)}</li>`).join('')}</ul></section><section><h3>Technologies</h3><div class="modal-tags">${project.technologies.map((technology) => `<span>${escapeHTML(technology)}</span>`).join('')}</div></section><section><h3>Development process</h3><p>${escapeHTML(project.process)}</p></section><section><h3>Learning objectives</h3><p>${escapeHTML(project.objectives)}</p></section><section><h3>Challenges</h3><p>${escapeHTML(project.challenges)}</p></section><section class="modal-wide"><h3>Development contributions</h3><p>${escapeHTML(project.contributions)}</p></section></div><div class="modal-visual visual-${escapeHTML(project.visual)}" aria-label="Illustrative interface visual for ${escapeHTML(project.title)}">${projectVisual(project)}</div><p class="modal-visual-note">Illustrative interface study · Not a project screenshot</p>`;
+    modalContent.innerHTML = `<p class="eyebrow">${escapeHTML(project.number)} / ${escapeHTML(project.category)}</p><h2 id="modal-title">${escapeHTML(project.title)}</h2><p class="modal-lead">${escapeHTML(project.overview)}</p><div class="modal-role"><span>ROLE</span><strong>${escapeHTML(project.role)}</strong></div><div class="modal-detail-grid"><section><h3>Project overview</h3><p>${escapeHTML(project.description)}</p></section><section><h3>Main features</h3><ul>${project.features.map((feature) => `<li>${escapeHTML(feature)}</li>`).join('')}</ul></section><section><h3>Technologies</h3><div class="modal-tags">${project.technologies.map((technology) => `<span>${escapeHTML(technology)}</span>`).join('')}</div></section><section><h3>Development process</h3><p>${escapeHTML(project.process)}</p></section><section><h3>Learning objectives</h3><p>${escapeHTML(project.objectives)}</p></section><section><h3>Challenges</h3><p>${escapeHTML(project.challenges)}</p></section><section class="modal-wide"><h3>Development contributions</h3><p>${escapeHTML(project.contributions)}</p></section></div><div class="modal-visual visual-${escapeHTML(project.visual)}" aria-label="Project screenshot for ${escapeHTML(project.title)}">${projectVisual(project)}</div><p class="modal-visual-note">Project screenshot</p>`;
     modal.hidden = false;
     document.body.classList.add('modal-open');
     modal.querySelector('.modal-close').focus();
