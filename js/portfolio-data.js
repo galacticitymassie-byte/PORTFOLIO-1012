@@ -7,21 +7,18 @@ window.PORTFOLIO_DATA = {
       visual: 'edu',
       features: ['Interactive computer literacy lessons', 'Assessments and learning games', 'Progress tracking and achievements', 'Age-appropriate digital learning content', 'Offline-first access'],
       overview: 'An offline Android learning application focused on introducing young learners to computer literacy.',
-      process: 'Specific development process details have not been provided.',
       objectives: 'The project is designed to introduce young learners to computer literacy through age-appropriate learning content.',
-      challenges: 'Specific project challenges have not been provided.',
       contributions: 'Role: Main Developer. The portfolio highlights application development, UI and feature implementation, testing, debugging, database work, and animation implementation.'
     },
     {
-      number: '02', slug: 'belupacito', title: 'Belupacito AI Pet Care Assistant', role: 'AI Developer', category: 'AI / WEB EXPERIENCE',
-      description: 'An AI-powered pet care assistant designed to provide users with conversational assistance and accessible pet-care information through an interactive digital experience.',
-      technologies: ['AI API integration', 'Conversational UI', 'Responsive web', 'Interactive UI'],
+      number: '02', slug: 'belupacito', title: 'Belupacito V.1.0.1', role: 'Sole Developer', category: 'AI / WEB EXPERIENCE',
+      description: 'An AI-powered pet-care chatbot that provides conversational assistance and accessible information about pet health, symptoms, and everyday care through an interactive digital experience.',
+      technologies: ['HTML', 'CSS', 'Vanilla JavaScript', 'Python', 'SQLite', 'Google Gemini API', 'Railway'],
+      accessLink: 'https://belupacito.up.railway.app/login',
       visual: 'pet',
       features: ['AI assistant', 'Conversational interface', 'Pet-care information', 'Interactive UI', 'Responsive web interface', 'AI API integration'],
       overview: 'An AI-powered assistant for conversational support and accessible pet-care information.',
-      process: 'Specific development process details have not been provided.',
       objectives: 'The project aims to make pet-care information accessible through an interactive conversational experience.',
-      challenges: 'Specific project challenges have not been provided.',
       contributions: 'Role: AI Developer. The portfolio identifies AI integration, interface implementation, feature development, testing, and debugging among the development contributions.'
     }
   ],
