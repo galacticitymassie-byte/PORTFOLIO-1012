@@ -3,37 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Curriculum vitae for Angel Mark, AI-assisted UI/UX and interactive web designer.">
+  <meta name="description" content="Curriculum vitae for Angel Mark, IT student and developer working across Android, web, and AI-powered projects.">
   <title>Angel Mark | Curriculum Vitae</title>
   <style>
     :root { color-scheme: light; --ink: #18201b; --muted: #59635d; --line: #dce3dc; --green: #42684d; --pale: #edf3eb; }
     * { box-sizing: border-box; }
-    body { margin: 0; background: #eef1ed; color: var(--ink); font: 10pt/1.5 "Segoe UI", Arial, sans-serif; }
-    .page { width: min(210mm, 100%); min-height: 297mm; margin: 24px auto; padding: 16mm 17mm; background: #fff; box-shadow: 0 14px 45px rgba(20, 31, 23, .12); }
-    .topline { height: 4px; margin: -16mm -17mm 10mm; background: linear-gradient(90deg, var(--green), #a9c381 70%, #d7e8cb); }
-    header { display: grid; grid-template-columns: 1fr 29mm; align-items: center; gap: 14mm; padding-bottom: 7mm; border-bottom: 1px solid var(--line); }
-    .eyebrow { margin: 0 0 3mm; color: var(--green); font-size: 8pt; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-    h1 { margin: 0; font-size: 29pt; line-height: 1.04; letter-spacing: -.04em; }
-    .role { margin: 3mm 0 1.5mm; font-size: 12pt; font-weight: 600; }
-    .degree { margin: 0; color: var(--muted); font-size: 9pt; }
-    .portrait { display: block; width: 29mm; height: 29mm; border: 2px solid #fff; border-radius: 50%; object-fit: cover; object-position: center 24%; box-shadow: 0 0 0 1px var(--line); }
-    .summary { margin: 6mm 0 7mm; color: var(--muted); font-size: 10pt; }
-    .section-title { display: flex; align-items: baseline; gap: 3mm; margin: 0 0 3mm; color: var(--green); font-size: 11pt; }
+    body { margin: 0; background: #eef1ed; color: var(--ink); font: 8.5pt/1.4 "Segoe UI", Arial, sans-serif; }
+    .page { width: min(210mm, 100%); min-height: 297mm; margin: 20px auto; padding: 13mm 14mm; background: #fff; box-shadow: 0 14px 45px rgba(20, 31, 23, .12); }
+    .topline { height: 4px; margin: -13mm -14mm 8mm; background: linear-gradient(90deg, var(--green), #a9c381 70%, #d7e8cb); }
+    header { display: grid; grid-template-columns: 1fr 26mm; align-items: center; gap: 10mm; padding-bottom: 5mm; border-bottom: 1px solid var(--line); }
+    .eyebrow { margin: 0 0 2mm; color: var(--green); font-size: 7pt; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: 26pt; line-height: 1.04; letter-spacing: -.04em; }
+    .role { margin: 2mm 0 1mm; font-size: 11pt; font-weight: 600; }
+    .degree { margin: 0; color: var(--muted); font-size: 8pt; }
+    .portrait { display: block; width: 26mm; height: 26mm; border: 2px solid #fff; border-radius: 50%; object-fit: cover; object-position: center 24%; box-shadow: 0 0 0 1px var(--line); }
+    .contact-line { display: flex; flex-wrap: wrap; gap: 2mm 5mm; margin-top: 2mm; color: var(--muted); font-size: 7.5pt; }
+    a { color: var(--green); text-decoration: none; }
+    .summary { margin: 4mm 0 5mm; color: var(--muted); font-size: 8.5pt; }
+    .columns { display: grid; grid-template-columns: 1.12fr .88fr; gap: 8mm; }
+    section { margin: 0 0 4mm; break-inside: avoid; }
+    .section-title { display: flex; align-items: baseline; gap: 3mm; margin: 0 0 2mm; color: var(--green); font-size: 9.5pt; }
     .section-title::after { height: 1px; flex: 1; background: var(--line); content: ""; }
-    .columns { display: grid; grid-template-columns: 1.15fr .85fr; gap: 9mm; }
-    section { margin: 0 0 6mm; break-inside: avoid; }
-    article { margin-bottom: 4mm; break-inside: avoid; }
-    h3 { margin: 0; font-size: 10pt; line-height: 1.35; }
-    .meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1mm 4mm; margin: 1mm 0 1.5mm; color: var(--green); font-size: 8pt; font-weight: 600; }
+    article { margin-bottom: 3mm; break-inside: avoid; }
+    h3 { margin: 0; font-size: 9pt; line-height: 1.3; }
+    .meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1mm 3mm; margin: 1mm 0; color: var(--green); font-size: 7pt; font-weight: 600; }
     p { margin: 0; }
-    ul { margin: 1.5mm 0 0; padding-left: 4mm; color: var(--muted); }
-    li { margin-bottom: .7mm; }
-    .tag-list { display: flex; flex-wrap: wrap; gap: 1.5mm; }
-    .tag { padding: 1mm 2mm; border: 1px solid var(--line); background: var(--pale); color: var(--ink); font-size: 8pt; }
-    .education-item { margin-bottom: 2.5mm; }
+    ul { margin: 1mm 0 0; padding-left: 4mm; color: var(--muted); }
+    li { margin-bottom: .3mm; }
+    .note { margin-top: 1mm; color: var(--muted); font-size: 7pt; }
+    .education-item { margin-bottom: 1.8mm; }
     .education-item strong { display: block; }
-    .note { color: var(--muted); font-size: 8pt; }
-    footer { display: flex; justify-content: space-between; margin-top: 4mm; padding-top: 3mm; border-top: 1px solid var(--line); color: var(--muted); font-size: 8pt; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 1mm; }
+    .tag { padding: .7mm 1.5mm; border: 1px solid var(--line); background: var(--pale); color: var(--ink); font-size: 7pt; }
+    .certificate { margin-bottom: 1.8mm; }
+    .certificate strong { display: block; font-size: 7.5pt; }
+    .certificate span { color: var(--muted); font-size: 7pt; }
+    footer { display: flex; justify-content: space-between; margin-top: 3mm; padding-top: 2mm; border-top: 1px solid var(--line); color: var(--muted); font-size: 7pt; }
     @page { size: A4; margin: 0; }
     @media print {
       body { background: #fff; }
@@ -57,12 +62,13 @@
       <div>
         <p class="eyebrow">Curriculum Vitae</p>
         <h1>Angel Mark</h1>
-        <p class="role">AI-Assisted UI/UX &amp; Interactive Web Designer</p>
-        <p class="degree">Bachelor of Science in Information Technology, major in Technopreneurship</p>
+        <p class="role">IT Student | Developer</p>
+        <p class="degree">Bachelor of Science in Information Technology · Major in Technopreneurship</p>
+        <p class="contact-line"><a href="mailto:zipzap32145@gmail.com">zipzap32145@gmail.com</a><span>Android · Web · AI</span></p>
       </div>
       <img class="portrait" src="../Profile.jpg" alt="Portrait of Angel Mark">
     </header>
-    <p class="summary">I build interactive digital experiences, learning applications, and AI-powered tools with a focus on usability, creativity, and modern technology.</p>
+    <p class="summary">I build web applications and Android apps as I continue to learn and improve my skills. I enjoy turning ideas into working projects and making them useful and user-friendly.</p>
 
     <div class="columns">
       <div>
@@ -71,45 +77,53 @@
           <article>
             <h3>EduTech Mobile</h3>
             <p class="meta"><span>Main Developer</span><span>Android / Education</span></p>
-            <p>An offline Android learning application introducing young learners to computer literacy through interactive lessons, assessments, games, progress tracking, achievements, and age-appropriate content.</p>
-            <ul><li>Offline-first learning experience.</li><li>Interactive lessons, assessments, and games.</li><li>Progress tracking and achievements.</li></ul>
-            <p class="note">Technologies: Kotlin, Jetpack Compose, Android Studio, Room / SQLite, Media3, Lottie.</p>
+            <p>An offline Android learning app that introduces young learners to computer literacy through age-appropriate lessons and activities.</p>
+            <ul><li>Interactive lessons, assessments, and games.</li><li>Progress tracking and achievements.</li><li>Designed for offline-first access.</li></ul>
+            <p class="note">Kotlin, Jetpack Compose, Room / SQLite, Media3, Lottie.</p>
           </article>
           <article>
-            <h3>Belupacito AI Pet Care Assistant</h3>
-            <p class="meta"><span>AI Developer</span><span>AI / Web Experience</span></p>
-            <p>An AI-powered pet-care assistant offering conversational assistance and accessible pet-care information through an interactive, responsive web experience.</p>
-            <ul><li>Conversational interface and interactive UI.</li><li>Pet-care information and AI API integration.</li><li>Responsive web interface.</li></ul>
+            <h3>Belupacito V.1.0.1</h3>
+            <p class="meta"><span>Sole Developer</span><span>AI / Web Experience</span></p>
+            <p>An AI-powered pet-care chatbot providing conversational information about pet health, symptoms, and everyday care.</p>
+            <ul><li>Responsive conversational interface.</li><li>AI-assisted pet-care information.</li></ul>
+            <p class="note">HTML, CSS, JavaScript, Python, SQLite, Google Gemini API.</p>
           </article>
         </section>
         <section>
           <h2 class="section-title">Development Contributions</h2>
-          <p>Application development, UI and feature implementation, testing, debugging, database implementation, animation implementation, AI integration, and project maintenance.</p>
+          <p>Application and feature development, UI implementation, testing and debugging, database work, animation implementation, and AI integration.</p>
         </section>
-      </div>
-      <div>
         <section>
           <h2 class="section-title">Education</h2>
           <p class="education-item"><strong>College</strong>Torres Capitol College, Inc.</p>
           <p class="education-item"><strong>High School</strong>San Andres Academy of Maramag, Inc.</p>
           <p class="education-item"><strong>Elementary</strong>Camp 1</p>
         </section>
+      </div>
+      <div>
         <section>
           <h2 class="section-title">Development</h2>
           <div class="tag-list"><span class="tag">Kotlin</span><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Jetpack Compose</span></div>
         </section>
         <section>
           <h2 class="section-title">Tools</h2>
-          <div class="tag-list"><span class="tag">Android Studio</span><span class="tag">VS Code</span><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Canva</span><span class="tag">CapCut</span><span class="tag">LottieFiles</span></div>
+          <div class="tag-list"><span class="tag">Android Studio</span><span class="tag">VS Code</span><span class="tag">SQLite</span><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Canva</span><span class="tag">CapCut</span><span class="tag">LottieFiles</span></div>
         </section>
         <section>
           <h2 class="section-title">AI / Technology</h2>
           <div class="tag-list"><span class="tag">AI API integration</span><span class="tag">AI-assisted development</span><span class="tag">Conversational interfaces</span><span class="tag">Prompt engineering</span></div>
         </section>
         <section>
-          <h2 class="section-title">Additional Learning</h2>
-          <p>5+ e-certificates noted.</p>
-          <p class="note">Individual titles and issuers were not provided.</p>
+          <h2 class="section-title">Soft Skills</h2>
+          <div class="tag-list"><span class="tag">Teamwork</span><span class="tag">Adaptability</span><span class="tag">Attention to detail</span><span class="tag">Time management</span></div>
+        </section>
+        <section>
+          <h2 class="section-title">Certificates &amp; Training</h2>
+          <p class="certificate"><strong>Frontend Forge Workshop</strong><span>DEVCON Bukidnon Chapter · July 2026</span></p>
+          <p class="certificate"><strong>B.A.S.I.C. CapCut Webinar</strong><span>MinSU College of Computer Studies · November 2025</span></p>
+          <p class="certificate"><strong>Design Thinking and Mobile App Wireframing</strong><span>DICT Region V · November 2025</span></p>
+          <p class="certificate"><strong>Introduction to Modern AI</strong><span>DICT-ITU DTC Initiative · Cisco Networking Academy · December 2025</span></p>
+          <p class="certificate"><strong>AI Ready ASEAN</strong><span>ASEAN Foundation · December 2025</span></p>
         </section>
       </div>
     </div>

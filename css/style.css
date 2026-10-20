@@ -784,10 +784,16 @@ html.motion-disabled .brand-monogram::before { display: none; }
     margin-bottom: 2px;
   }
   .hero h1 {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
     font-size: clamp(38px, 11vw, 68px);
     margin-bottom: 12px;
   }
   .hero-role {
+    display: flex;
+    width: fit-content;
+    margin-inline: auto;
     font-size: 10.5px;
     gap: 8px;
   }
@@ -827,7 +833,13 @@ html.motion-disabled .brand-monogram::before { display: none; }
     font-size: 11px;
   }
   .scroll-cue {
-    display: none;
+    display: flex;
+    bottom: 14px;
+    gap: 7px;
+    font-size: 10px;
+  }
+  .scroll-cue-line {
+    height: 25px;
   }
   .about-section { padding-block: 93px 93px; }
   .section-heading { margin-bottom: 35px; }
@@ -915,6 +927,36 @@ html.motion-disabled .brand-monogram::before { display: none; }
   .cert-card h3 { font-size: 12px; }
   .modal-detail-grid { grid-template-columns: 1fr; }
   .modal-wide { grid-column: auto; }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero {
+    min-height: 100svh;
+    min-height: 100vh;
+    padding: 68px 0 48px;
+  }
+  .hero-copy { padding: 4px 14px; }
+  .profile-badge {
+    width: clamp(56px, 16vh, 76px);
+    margin-bottom: 5px;
+  }
+  .hero-status { margin-bottom: 4px; font-size: 8px; }
+  .hero-intro { font-size: 11px; }
+  .hero h1 { display: block; width: fit-content; max-width: 100%; margin-inline: auto; margin-bottom: 4px; font-size: clamp(30px, 7vw, 42px); }
+  .hero-role { display: flex; width: fit-content; margin-inline: auto; font-size: 8px; }
+  .hero-education { margin-top: 3px; font-size: 9px; }
+  .hero-description { margin-top: 4px; font-size: 10px; line-height: 1.35; }
+  .hero-actions { max-width: none; gap: 7px; margin-top: 7px; }
+  .hero-actions .button,
+  .hero-actions .button-secondary {
+    width: auto;
+    min-width: 0;
+    min-height: 34px;
+    flex: 0 1 auto;
+    padding-inline: 9px;
+    font-size: 9px;
+  }
+  .scroll-cue { bottom: 6px; gap: 5px; font-size: 8px; }
+  .scroll-cue-line { height: 13px; }
 }
 @media (hover: none) {
   .custom-cursor { display: none; }
