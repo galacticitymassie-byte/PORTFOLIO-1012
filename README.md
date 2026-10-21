@@ -1,4 +1,4 @@
-# Developer Portfolio
+# Angel Mark Portfolio
 
 A static HTML, CSS, and JavaScript portfolio. No build step or package installation is required.
 
@@ -17,4 +17,4 @@ For a special repository named `YOUR-GITHUB-USERNAME.github.io`, the public URL 
 
 `https://YOUR-GITHUB-USERNAME.github.io/`
 
-The site uses relative asset paths, so it works both at the repository URL and at the account root. Certificate details and the developer's name remain placeholders until real information is added.
+The site uses relative asset paths, so it works both at the repository URL and at the account root. The portfolio assistant uses local rule-based responses and does not require generative AI, an API key, or a backend. Certificate details remain placeholders until real information is added.

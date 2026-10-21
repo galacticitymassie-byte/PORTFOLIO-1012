@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#101110">
   <meta name="description"
     content="An interactive developer portfolio focused on Android, the web, and AI-assisted applications.">
-  <title>Developer Portfolio — Interactive CV</title>
+  <title>Angel Mark | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
@@ -272,29 +272,30 @@
     </section>
   </div>
 
-  <button class="assistant-launcher ai-glitch-button" type="button" data-open-assistant
-    aria-label="Open AI CV assistant"><span class="launcher-icon"></span><span>Ask My AI</span><span
+  <button class="assistant-launcher ai-glitch-button" type="button" data-open-assistant aria-expanded="false"
+    aria-controls="assistant-panel" aria-label="Open portfolio assistant"><span class="launcher-icon"></span><span>Ask My Portfolio</span><span
       class="ai-button-blink" aria-hidden="true"></span></button>
-  <section class="chat-panel" id="assistant-panel" aria-label="AI CV assistant" hidden>
+  <section class="chat-panel" id="assistant-panel" role="dialog" aria-labelledby="chat-title" hidden>
     <header class="chat-header">
       <div class="chat-avatar">✳</div>
-      <div class="chat-title"><strong>Portfolio Assistant</strong><span><i class="status-dot"></i> Answers from this CV
-          only</span></div><button class="chat-clear" type="button" aria-label="Clear conversation"
+      <div class="chat-title"><strong id="chat-title">Portfolio Assistant</strong><span><i class="status-dot"></i>
+          Local, rule-based answers</span></div><button class="chat-clear" type="button" aria-label="Clear conversation"
         title="Clear conversation"><span aria-hidden="true">↺</span> Clear</button><button class="chat-minimize"
         type="button" aria-label="Close assistant">×</button>
     </header>
-    <div class="chat-messages" id="chat-messages" aria-live="polite" aria-relevant="additions text">
+    <div class="chat-messages" id="chat-messages" role="log" aria-label="Conversation" aria-live="polite"
+      aria-relevant="additions text">
       <div class="chat-message assistant-message"><span class="message-avatar">✳</span>
-        <p>Hi. Ask me about the projects, skills, or education listed here. I'll tell you when something isn't
-          available.</p>
+        <p>Hi! I'm Angel Mark's portfolio assistant. I can answer questions about the projects, skills, education, and
+          contact details listed here. I'm rule-based, not generative AI.</p>
       </div>
     </div>
     <div class="suggested-questions"><button type="button">What is EduTech Mobile?</button><button type="button">Where
         did they study?</button></div>
     <form class="chat-form" id="chat-form"><label class="visually-hidden" for="chat-input">Ask a question about the
         portfolio</label><input id="chat-input" name="question" placeholder="Ask about this portfolio…"
-        autocomplete="off" required><button type="submit" aria-label="Send message">↑</button></form>
-    <p class="chat-disclaimer">Local assistant · No API key or external service</p>
+        autocomplete="off"><button type="submit" aria-label="Send message">↑</button></form>
+    <p class="chat-disclaimer" id="chat-disclaimer">Rule-based, not generative AI · No API key or external service</p>
   </section>
   <script>document.documentElement.classList.add('js');</script>
 </body>
