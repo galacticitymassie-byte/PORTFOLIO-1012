@@ -928,35 +928,52 @@ html.motion-disabled .brand-monogram::before { display: none; }
   .modal-detail-grid { grid-template-columns: 1fr; }
   .modal-wide { grid-column: auto; }
 }
-@media (orientation: landscape) and (max-height: 500px) {
+@media (orientation: landscape) and (max-height: 700px) {
   .hero {
     min-height: 100svh;
     min-height: 100vh;
-    padding: 68px 0 48px;
+    padding: 80px 0 52px;
   }
-  .hero-copy { padding: 4px 14px; }
+  .hero-copy { padding: 6px 14px; }
   .profile-badge {
-    width: clamp(56px, 16vh, 76px);
-    margin-bottom: 5px;
+    width: clamp(96px, 27vh, 144px);
+    margin-bottom: 8px;
+    border-radius: 28px;
   }
-  .hero-status { margin-bottom: 4px; font-size: 8px; }
-  .hero-intro { font-size: 11px; }
-  .hero h1 { display: block; width: fit-content; max-width: 100%; margin-inline: auto; margin-bottom: 4px; font-size: clamp(30px, 7vw, 42px); }
-  .hero-role { display: flex; width: fit-content; margin-inline: auto; font-size: 8px; }
-  .hero-education { margin-top: 3px; font-size: 9px; }
-  .hero-description { margin-top: 4px; font-size: 10px; line-height: 1.35; }
-  .hero-actions { max-width: none; gap: 7px; margin-top: 7px; }
+  .profile-badge::before { border-radius: 40px; }
+  .profile-photo { border-radius: 22px; }
+  .hero-status { margin-bottom: 5px; font-size: 9px; }
+  .hero-intro { margin-bottom: 2px; font-size: 12px; }
+  .hero h1 { display: block; width: fit-content; max-width: 100%; margin: 0 auto 5px; font-size: clamp(34px, 6vw, 54px); }
+  .hero-role { display: flex; width: fit-content; margin-inline: auto; font-size: 9px; }
+  .hero-education { margin-top: 4px; font-size: clamp(9px, 1.1vw, 12px); }
+  .hero-actions { max-width: 100%; gap: 8px; margin-top: 10px; }
   .hero-actions .button,
   .hero-actions .button-secondary {
     width: auto;
     min-width: 0;
-    min-height: 34px;
+    min-height: 38px;
     flex: 0 1 auto;
-    padding-inline: 9px;
-    font-size: 9px;
+    padding-inline: 12px;
+    font-size: 10px;
   }
-  .scroll-cue { bottom: 6px; gap: 5px; font-size: 8px; }
-  .scroll-cue-line { height: 13px; }
+  .scroll-cue { bottom: 8px; gap: 6px; font-size: 9px; }
+  .scroll-cue-line { height: 18px; }
+}
+@media (orientation: landscape) and (max-height: 430px) {
+  .hero { align-items: center; justify-content: flex-start; padding: 84px 0 46px; }
+  .hero-copy { padding-block: 2px; }
+  .profile-badge { width: clamp(88px, 24vh, 108px); margin-bottom: 4px; }
+  .hero-status { margin-bottom: 2px; font-size: 8px; }
+  .hero-intro { font-size: 11px; }
+  .hero h1 { margin-bottom: 2px; font-size: clamp(32px, 5vw, 42px); }
+  .hero-role { font-size: 8px; }
+  .hero-education { margin-top: 1px; font-size: 9px; }
+  .hero-actions { gap: 7px; margin-top: 3px; }
+  .hero-actions .button,
+  .hero-actions .button-secondary { min-height: 32px; padding-inline: 9px; font-size: 9px; }
+  .scroll-cue { bottom: 6px; gap: 4px; font-size: 8px; }
+  .scroll-cue-line { height: 12px; }
 }
 @media (hover: none) {
   .custom-cursor { display: none; }
