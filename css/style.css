@@ -787,6 +787,7 @@ html.motion-disabled .brand-monogram::before { display: none; }
     display: block;
     width: fit-content;
     max-width: 100%;
+    margin-inline: auto;
     font-size: clamp(38px, 11vw, 68px);
     margin-bottom: 12px;
   }
