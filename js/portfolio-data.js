@@ -14,7 +14,7 @@ window.PORTFOLIO_DATA = {
       number: '02', slug: 'belupacito', title: 'Belupacito V.1.0.1', role: 'Sole Developer', category: 'AI / WEB EXPERIENCE',
       description: 'An AI-powered pet-care chatbot that provides conversational assistance and accessible information about pet health, symptoms, and everyday care through an interactive digital experience.',
       technologies: ['HTML', 'CSS', 'Vanilla JavaScript', 'Python', 'SQLite', 'Google Gemini API', 'Railway'],
-      accessLink: 'https://belupacito.up.railway.app/login',
+      accessLink: '',
       visual: 'pet',
       features: ['AI assistant', 'Conversational interface', 'Pet-care information', 'Interactive UI', 'Responsive web interface', 'AI API integration'],
       overview: 'An AI-powered assistant for conversational support and accessible pet-care information.',
