@@ -11,10 +11,10 @@
 
   const knowledge = [
     { terms: ['thank', 'thanks', 'thank you'], answer: "You're welcome! Ask me anything else about the information listed in the portfolio." },
-    { terms: ['bye', 'goodbye', 'see you'], answer: 'Thanks for stopping by. Feel free to explore the portfolio or get in touch at zipzap32145@gmail.com.' },
+    { terms: ['bye', 'goodbye', 'see you'], answer: 'Thanks for stopping by. Feel free to explore the portfolio or get in touch at zerosub704@gmail.com.' },
     { terms: ['are you ai', 'using ai', 'generative ai', 'how do you work'], answer: "I'm a local, rule-based assistant. I match your question to information in this portfolio; I don't use generative AI, an API key, or an external AI service." },
     { terms: ['who is', 'who are you', 'your name', 'about them', 'about this person', 'tell me about this developer'], answer: 'Angel Mark is an IT student and developer working across Android, web, and AI-assisted applications, with a focus on usable, engaging digital experiences.' },
-    { terms: ['contact', 'email', 'get in touch', 'reach angel'], answer: 'You can contact Angel Mark by email at zipzap32145@gmail.com.' },
+    { terms: ['contact', 'email', 'get in touch', 'reach angel'], answer: 'You can contact Angel Mark by email at zerosub704@gmail.com.' },
     { terms: ['projects', 'how many project', 'completed'], answer: 'There are 2 projects featured: EduTech Mobile and Belupacito AI Pet Care Assistant.' },
     { terms: ['edutech', 'edu tech', 'project 1', 'computer literacy'], answer: 'EduTech Mobile is an offline Android learning application designed to introduce young learners to computer literacy. It includes interactive lessons, assessments, games, progress tracking, achievements, and age-appropriate learning content. The listed role is Main Developer.' },
     { terms: ['belupacito', 'pet care', 'project 2'], answer: 'Belupacito is an AI-powered pet care assistant that provides conversational assistance and accessible pet-care information. Listed capabilities include an AI assistant, conversational interface, interactive UI, responsive web interface, and AI API integration. The listed role is AI Developer.' },
